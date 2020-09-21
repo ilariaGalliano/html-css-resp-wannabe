@@ -83,11 +83,13 @@ img {
   }
   #lezioni .row>.left,
   #lezioni .row>.right {
+    width: 100%;
     float: none;
   }
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
+    width: 100%;
     float: none;
   }
   .row .left img,
@@ -102,3 +104,46 @@ img {
     max-height: 100px;
   }
 }
+/* RESPONSIVE CSS media queries TABLET-IPAD */
+
+/* Tablet in modalità orizzontale */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #lezioni{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container .row{
+    max-width: 100%;
+  }
+}
+/* Tablet in modalità verticale */
+@media screen and (min-width: 1024px) and (max-width: 768px) {
+  #lezioni {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container .row{
+    max-width: 100%;
+  }
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    float: none;
+  }
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+  }
+  .row .left img,
+  .row .right img,
+  .row .central img{
+    max-height: 10px;
+    padding: 10px;
+  }
+  .row .first img,
+  .row .second img,
+  .row .third img{
+    max-height: 100px;
+  }
+
+  }
