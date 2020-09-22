@@ -65,7 +65,7 @@
 }
 
 img {
-  height: 200px;
+  height: 160px;
 }
 
 .clear {
@@ -74,6 +74,9 @@ img {
 /* RESPONSIVE CSS media queries */
 
 @media screen and (max-width: 419px) {
+  *{
+    box-sizing: border-box;
+  }
   .container{
     margin: 0 auto;
   }
@@ -103,11 +106,22 @@ img {
   .row .third img{
     max-height: 100px;
   }
+  #why{
+    background: #f2f2cd;
+  }
+  #why .row> .first ,
+  #why .row> .second ,
+  #why .row> .third {
+    margin: 10px 0 10px 0;
+  }
 }
 /* RESPONSIVE CSS media queries TABLET-IPAD */
 
 /* Tablet in modalità orizzontale */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  *{
+    box-sizing: border-box;
+  }
   #lezioni{
     margin: 0 auto;
     text-align: center;
@@ -115,9 +129,15 @@ img {
   .container .row{
     max-width: 100%;
   }
+  #why{
+    background: #f2f2cd;
+  }
 }
 /* Tablet in modalità verticale */
 @media screen and (min-width: 1024px) and (max-width: 768px) {
+  *{
+    box-sizing: border-box;
+  }
   #lezioni {
     margin: 0 auto;
     text-align: center;
@@ -134,16 +154,7 @@ img {
   #steps .row>.right {
     float: none;
   }
-  .row .left img,
-  .row .right img,
-  .row .central img{
-    max-height: 10px;
-    padding: 10px;
+  #why{
+    background: #f2f2cd;
   }
-  .row .first img,
-  .row .second img,
-  .row .third img{
-    max-height: 100px;
-  }
-
   }
